@@ -1,0 +1,15 @@
+/*Header*/
+header {
+    display: flex;
+}
+
+.header-name {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+}
+
+.header-in {
+    margin: 0;
+    padding: 0;
+}
