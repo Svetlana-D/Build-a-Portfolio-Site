@@ -1,15 +1,24 @@
 /*Header*/
 header {
     display: flex;
+    justify-content: flex-end;
 }
 
 .header-name {
     display: flex;
-    flex-flow: row wrap;
-    justify-content: flex-end;
+    flex-flow: column wrap;
+
 }
 
 .header-in {
     margin: 0;
     padding: 0;
+    text-align: right;
+}
+
+.logo-mark {
+    position: absolute; /* Абсолютное позиционирование */
+    left: 15px;
+    top: 10px;
+    /*align-self: flex-start;*/
 }
