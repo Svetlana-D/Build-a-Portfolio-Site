@@ -1,7 +1,9 @@
 /*Header*/
 header {
     display: flex;
-    justify-content: flex-end;
+    flex-flow: row wrap;
+    justify-content: space-between;
+
 }
 
 .header-name {
@@ -17,8 +19,8 @@ header {
 }
 
 .logo-mark {
-    position: absolute; /* Абсолютное позиционирование */
+    /*position: absolute;
     left: 15px;
     top: 10px;
-    /*align-self: flex-start;*/
+    align-self: flex-start;*/
 }
