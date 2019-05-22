@@ -10,7 +10,7 @@ img, embed, object, video {
     }
 
 /*Header*/
-header {
+.header-all {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
@@ -33,6 +33,13 @@ header {
 
 .name {
    font-size: 30px;
+}
+
+hr {
+    border: 0; /* Убираем границу */
+    background-color: #7d97ad; /* Цвет линии */
+    color: #7d97ad; /* Цвет линии для IE6-7 */
+    height: 3px;
 }
 
 .logo-mark {
