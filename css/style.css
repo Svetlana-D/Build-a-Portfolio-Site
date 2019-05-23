@@ -5,7 +5,8 @@ body {
 }
 
 img, embed, object, video {
-    max-width: 100%;
+    /*width: 100%;*/
+    width: 100%;
     font-size: 24px;
     }
 
@@ -54,7 +55,14 @@ hr {
 /*Class picture*/
 
 /*Article*/
+.container {
+    display: flex;
+    flex-flow: column wrap;
+}
 
+.box {
+    width: 100%;
+}
 /**/
 
 /**/
@@ -62,3 +70,23 @@ hr {
 /**/
 
 /**/
+
+@media screen and (min-device-width: 760px) {
+
+}
+
+@media screen and (min-width: 950px) {
+
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        flex-flow: row nowrap;
+    }
+
+    .box {
+        width: calc(100%/3);
+        margin: 0;
+        padding: 0;
+    }
+}
