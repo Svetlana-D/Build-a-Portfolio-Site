@@ -9,8 +9,8 @@ body {
 }
 .body-in {
     margin: 0;
-    padding: 10px 15px 10px;
-    width: calc(100% - 30px);
+    padding: 10px 25px 10px;
+    width: calc(100% - 50px);
 }
 
 img, embed, object, video {
@@ -118,11 +118,11 @@ a {
     text-decoration: none;
 }
 
-
+/*Media*/
 @media screen and (min-device-width: 750px) {
     .body-in {
-         padding: 20px 35px 20px;
-         width: calc(100% - 70px);
+         padding: 20px 50px 20px;
+         width: calc(100% - 100px);
     }
     .box {
         display: flex;
@@ -160,19 +160,22 @@ a {
 
 @media screen and (min-width: 950px) {
     .body-in {
-        padding: 25px 35px 25px;
-        width: calc(100% - 70px);
+        padding: 25px 70px 25px;
+        width: calc(100% - 140px);
     }
     main {
         display: flex;
         flex-flow: column nowrap;
     }
+
     .picture {
         width: 100%;
     }
+
     article {
         width: 100%;
     }
+
     .container {
         flex-flow: row nowrap;
     }
@@ -182,13 +185,16 @@ a {
         margin: 0;
         padding: 0;
     }
+
     .box-in1, .box-in2 {
         width: 100%;
     }
+
 /*All fonts*/
     .name {
        font-size: 2.4em;
     }
+
     .mission {
        font-size: 1.3em;
     }
@@ -202,10 +208,10 @@ a {
     }
 }
 
-@media screen and (min-width: 1270px) {
+@media screen and (min-width: 1240px) {
 /*All fonts*/
     .body-in {
-        width: 1200px;
+        width: 1100px;
         margin: auto;
         padding: 25px 0 25px;
     }
@@ -213,6 +219,7 @@ a {
     .name {
        font-size: 2.8em;
     }
+
     .mission {
        font-size: 1.5em;
     }
