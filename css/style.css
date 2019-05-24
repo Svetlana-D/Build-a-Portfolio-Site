@@ -17,7 +17,6 @@ img, embed, object, video {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-
 }
 
 .header-name {
@@ -117,7 +116,17 @@ a {
 }
 
 @media screen and (min-width: 950px) {
-
+    .box {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+    }
+    .box-in1 {
+        width: 70%;
+    }
+    .box-in2 {
+        width: 30%;
+    }
 }
 
 @media screen and (min-width: 1200px) {
@@ -126,8 +135,12 @@ a {
     }
 
     .box {
+        flex-flow: column wrap;
         width: calc(100%/3);
         margin: 0;
         padding: 0;
+    }
+    .box-in1, .box-in2 {
+        width: 100%;
     }
 }
