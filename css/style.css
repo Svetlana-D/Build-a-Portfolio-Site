@@ -1,9 +1,17 @@
+html {
+    margin: 0;
+    padding: 0;
+}
+
+
 /*Body*/
 body {
+    display: block;
     font: 100%/1.6 Helvetica, Arial, sans-serif;
     color: #2d3c49;
     margin: 0;
-    padding: 10px 15px 10px;
+    padding: 10px 15px 0;
+    width: calc(100% - 30px);
 }
 
 img, embed, object, video {
@@ -11,6 +19,7 @@ img, embed, object, video {
     width: 100%;
     font-size: 24px;
     }
+
 
 /*Header*/
 .header-all {
@@ -31,14 +40,15 @@ img, embed, object, video {
     text-align: right;
     text-transform: uppercase;
     font-weight: normal;
+    opacity: 0.8;
 }
 
 .name {
-   font-size: 1.8em;
+   font-size: 1.6em;
    font-weight: lighter;
 }
 .mission {
-   font-size: 1em;
+   font-size: 0.9em;
 }
 
 hr {
@@ -57,15 +67,19 @@ hr {
     align-self: flex-start;*/
 }
 
+
 /*Main*/
+main {
+   width: 100%;
+}
 .picture {
-    margin: 10px 0 0;
-    padding: 0;
+    padding: 20px 0 0;
+    margin: 0;
 }
 /*Article*/
-h2 {
+.article-name {
     margin: 0;
-    padding: 0;
+    padding: 0 10px 0;
     text-align: left;
     text-transform: capitalize;
     font-weight: normal;
@@ -103,44 +117,178 @@ a {
     color: #2d3c49;
     text-decoration: none;
 }
-/**/
 
-/**/
 
-/**/
+@media screen and (min-device-width: 750px) {
+    .box {
+            display: flex;
+            flex-flow: row wrap;
+            align-items: center;
+        }
+        .box-in1 {
+            width: 70%;
+        }
+        .box-in2 {
+            width: 30%;
+        }
 
-/**/
+/*All fonts*/
+    .name {
+       font-size: 2.2em;
+    }
+    .mission {
+       font-size: 1.2em;
+    }
 
-@media screen and (min-device-width: 760px) {
+    .article-name {
+        font-size: 1.8em;
+    }
 
+    .work-name {
+        font-size: 1.8em;
+    }
+
+    hr {
+        height: 3px;
+        margin: 5px 0 5px;
+    }
 }
 
-@media screen and (min-width: 950px) {
-    .box {
+/*@media screen and (min-width: 950px) {
+    main {
         display: flex;
-        flex-flow: row wrap;
-        align-items: center;
+        flex-flow: row nowrap;
     }
-    .box-in1 {
+    .box {
+        flex-flow: column wrap;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .picture {
         width: 70%;
     }
-    .box-in2 {
-        width: 30%;
+    article {
+         width: 30%;
     }
-}
+    .box-in1, .box-in2 {
+        width: 100%;
+    }
 
-@media screen and (min-width: 1200px) {
+    /*All fonts*/
+    /*.name {
+       font-size: 2.4em;
+    }
+    .mission {
+       font-size: 1.3em;
+    }
+
+    .article-name {
+        font-size: 1.7em;
+    }
+
+    .work-name {
+        font-size: 1.7em;
+    }
+    .box-in1, .box-in2 {
+        width: 100%;
+    }
+}*/
+
+/*@media screen and (min-width: 950px) and (orientation:portrait) {
+    main {
+        display: flex;
+        flex-flow: column nowrap;
+    }
+    .picture {
+        width: 100%;
+    }
+    article {
+        width: 100%;
+    }
     .container {
         flex-flow: row nowrap;
     }
-
     .box {
-        flex-flow: column wrap;
-        width: calc(100%/3);
+        flex-flow: column nowrap;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+/*All fonts*/
+    /*.name {
+       font-size: 2.4em;
+    }
+    .mission {
+       font-size: 1.3em;
+    }
+
+    .article-name {
+        font-size: 1.9em;
+    }
+
+    .work-name {
+        font-size: 1.9em;
+    }
+    .box-in1, .box-in2 {
+        width: 100%;
+    }
+}*/
+
+@media screen and (min-width: 950px) {
+    main {
+        display: flex;
+        flex-flow: column nowrap;
+    }
+    .picture {
+        width: 100%;
+    }
+    article {
+        width: 100%;
+    }
+    .container {
+        flex-flow: row nowrap;
+    }
+    .box {
+        flex-flow: column nowrap;
+        width: 100%;
         margin: 0;
         padding: 0;
     }
     .box-in1, .box-in2 {
         width: 100%;
+    }
+/*All fonts*/
+    .name {
+       font-size: 2.4em;
+    }
+    .mission {
+       font-size: 1.3em;
+    }
+
+    .article-name {
+        font-size: 1.9em;
+    }
+
+    .work-name {
+        font-size: 1.9em;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+/*All fonts*/
+    .name {
+       font-size: 2.8em;
+    }
+    .mission {
+       font-size: 1.5em;
+    }
+
+    .article-name {
+        font-size: 2.1em;
+    }
+
+    .work-name {
+        font-size: 2.1em;
     }
 }
