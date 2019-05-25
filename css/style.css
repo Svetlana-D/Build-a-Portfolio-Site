@@ -2,6 +2,7 @@
 body {
     display: block;
     font: 100%/1.6 Helvetica, Arial, sans-serif;
+    font-size: 16px;
     color: #2d3c49;
     margin: 0;
     padding: 0;
@@ -14,10 +15,8 @@ body {
 }
 
 img, embed, object, video {
-    /*width: 100%;*/
     width: 100%;
-    font-size: 24px;
-    }
+}
 
 
 /*Header*/
@@ -40,7 +39,7 @@ img, embed, object, video {
     text-align: right;
     text-transform: uppercase;
     font-weight: normal;
-    opacity: 0.8;
+    /*opacity: 0.8;*/
 }
 
 .name {
