@@ -1,3 +1,9 @@
+/* HTML */
+html {
+    width: 100%;
+}
+
+
 /* Body */
 body {
     display: block;
@@ -15,9 +21,13 @@ body {
     width: calc(100% - 60px);
 }
 
-img, embed, object, video {
+img,
+embed,
+object,
+video {
     width: 100%;
 }
+
 
 /* Header */
 header {
@@ -63,6 +73,7 @@ hr {
     padding: 0;
 }
 
+
 /* Main */
 main {
    width: 100%;
@@ -71,6 +82,7 @@ main {
 .picture {
     margin: 0;
 }
+
 
 /* Article */
 article {
@@ -123,6 +135,7 @@ a {
     text-decoration: none;
 }
 
+
 /* Media queries */
 @media screen and (min-device-width: 450px) {
     .body-in {
@@ -169,6 +182,7 @@ a {
     }
 
 }
+
 
 @media screen and (min-device-width: 560px) {
     .body-in {
@@ -228,6 +242,7 @@ a {
     }
 
 }
+
 
 @media screen and (min-width: 800px) {
     .body-in {
@@ -300,6 +315,7 @@ a {
         font-size: 1.9em;
     }
 }
+
 
 @media screen and (min-width: 1260px) {
     .body-in {
