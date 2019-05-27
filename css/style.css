@@ -170,7 +170,7 @@ a {
 
 }
 
-@media screen and (min-device-width: 550px) {
+@media screen and (min-device-width: 560px) {
     .body-in {
          padding: 30px 60px;
          width: calc(100% - 120px);
@@ -202,15 +202,12 @@ a {
     .box-in1 {
         width: 50%;
         /*width: calc(50% - 20px);*/
-        padding: 15px 0;
-    }
 
-    .box-in1:first-of-type {
-        padding-top: 0;
     }
 
     .box-in2 {
-        width: 50%;
+        width: calc(50% - 30px);
+        padding: 15px;
     }
 
     /* All fonts */
