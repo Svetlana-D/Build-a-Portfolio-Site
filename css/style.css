@@ -1,4 +1,4 @@
-/*Body*/
+/* Body */
 body {
     display: block;
     font: 100%/1.6 Helvetica, Arial, sans-serif;
@@ -8,6 +8,7 @@ body {
     padding: 0;
     width: 100%;
 }
+
 .body-in {
     margin: 0;
     padding: 17px 30px;
@@ -18,11 +19,11 @@ img, embed, object, video {
     width: 100%;
 }
 
-
-/*Header*/
+/* Header */
 header {
     padding: 0 0 12px;
 }
+
 .header-all {
     display: flex;
     flex-flow: row wrap;
@@ -34,7 +35,6 @@ header {
 .header-name {
     display: flex;
     flex-flow: column wrap;
-
 }
 
 .header-in {
@@ -43,7 +43,7 @@ header {
     text-align: right;
     text-transform: uppercase;
     font-weight: normal;
-    /*opacity: 0.8;*/
+    /* opacity: 0.8; */
 }
 
 .name {
@@ -55,31 +55,24 @@ header {
 }
 
 hr {
-    border: 0; /* Убираем границу */
-    background-color: #7d97ad; /* Цвет линии */
-    color: #7d97ad; /* Цвет линии для IE6-7 */
+    border: 0;
+    background-color: #7d97ad;/* Line color */
+    color: #7d97ad;/* Line color for IE6-7 */
     height: 3px;
     margin: 0;
     padding: 0;
 }
 
-.logo-mark {
-    /*position: absolute;
-    left: 15px;
-    top: 10px;
-    align-self: flex-start;*/
-}
-
-
-/*Main*/
+/* Main */
 main {
    width: 100%;
 }
+
 .picture {
-    /*padding: 20px 0 0;*/
     margin: 0;
 }
-/*Article*/
+
+/* Article */
 article {
     margin-top: 8px;
 }
@@ -130,29 +123,35 @@ a {
     text-decoration: none;
 }
 
-/*Media*/
+/* Media queries */
 @media screen and (min-device-width: 450px) {
     .body-in {
          padding: 25px 50px;
          width: calc(100% - 100px);
     }
+
     header {
         padding: 0 0 14px;
     }
+
     .logo-svg {
         width: 50px;
         height: 50px;
     }
+
     .header-all {
         margin-bottom: 6px;
     }
+
     article {
         margin-top: 6px;
     }
-/*All fonts*/
+
+    /* All fonts */
     .name {
        font-size: 1.8em;
     }
+
     .mission {
        font-size: 1em;
     }
@@ -164,6 +163,7 @@ a {
     .work-name {
         font-size: 1.3em;
     }
+
     p {
         font-size: 0.9em;
     }
@@ -179,10 +179,12 @@ a {
     header {
         padding: 0 0 16px;
     }
+
     .logo-svg {
         width: 60px;
         height: 60px;
     }
+
     .header-all {
         margin-bottom: 8px;
     }
@@ -190,11 +192,13 @@ a {
     article {
         margin-top: 6px;
     }
+
     .box {
         display: flex;
         flex-flow: row wrap;
         align-items: center;
     }
+
     .box-in1 {
         width: 50%;
         /*width: calc(50% - 20px);*/
@@ -209,7 +213,7 @@ a {
         width: 50%;
     }
 
-/*All fonts*/
+    /* All fonts */
     .name {
        font-size: 2.2em;
        font-weight: normal;
@@ -237,10 +241,12 @@ a {
     header {
         padding: 0 0 18px;
     }
+
     .logo-svg {
         width: 70px;
         height: 70px;
     }
+
     .header-all {
         margin-bottom: 10px;
     }
@@ -261,6 +267,7 @@ a {
     .container {
         flex-flow: row nowrap;
     }
+
     .box {
         flex-flow: column nowrap;
         width: 100%;
@@ -278,7 +285,7 @@ a {
         padding:0;
     }
 
-/*All fonts*/
+    /* All fonts */
     .name {
        font-size: 2.6em;
        font-weight: normal;
@@ -298,16 +305,18 @@ a {
 }
 
 @media screen and (min-width: 1260px) {
-/*All fonts*/
     .body-in {
         width: 1100px;
         margin: auto;
         padding: 35px 0;
     }
+
     .logo-svg {
         width: 80px;
         height: 80px;
     }
+
+    /* All fonts */
     .name {
        font-size: 3em;
     }
@@ -324,88 +333,3 @@ a {
         font-size: 2.1em;
     }
 }
-
-
-
-
-/*@media screen and (min-width: 950px) {
-    main {
-        display: flex;
-        flex-flow: row nowrap;
-    }
-    .box {
-        flex-flow: column wrap;
-        width: 100%;
-        margin: 0;
-        padding: 0;
-    }
-    .picture {
-        width: 70%;
-    }
-    article {
-         width: 30%;
-    }
-    .box-in1, .box-in2 {
-        width: 100%;
-    }
-
-    /*All fonts*/
-    /*.name {
-       font-size: 2.4em;
-    }
-    .mission {
-       font-size: 1.3em;
-    }
-
-    .article-name {
-        font-size: 1.7em;
-    }
-
-    .work-name {
-        font-size: 1.7em;
-    }
-    .box-in1, .box-in2 {
-        width: 100%;
-    }
-}*/
-
-/*@media screen and (min-width: 950px) and (orientation:portrait) {
-    main {
-        display: flex;
-        flex-flow: column nowrap;
-    }
-    .picture {
-        width: 100%;
-    }
-    article {
-        width: 100%;
-    }
-    .container {
-        flex-flow: row nowrap;
-    }
-    .box {
-        flex-flow: column nowrap;
-        width: 100%;
-        margin: 0;
-        padding: 0;
-    }
-/*All fonts*/
-    /*.name {
-       font-size: 2.4em;
-    }
-    .mission {
-       font-size: 1.3em;
-    }
-
-    .article-name {
-        font-size: 1.9em;
-    }
-
-    .work-name {
-        font-size: 1.9em;
-    }
-    .box-in1, .box-in2 {
-        width: 100%;
-    }
-}*/
-
