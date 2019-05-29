@@ -21,10 +21,7 @@ body {
     width: calc(100% - 60px);
 }
 
-img,
-embed,
-object,
-video {
+img {
     width: 100%;
 }
 
